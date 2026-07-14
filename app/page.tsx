@@ -62,21 +62,31 @@ export default function Home() {
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
       >
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {['C# & .NET', 'Kotlin & Android', 'React Native', 'ASP.NET MVC', 'Microsoft Azure', 'Git & GitHub', 'JavaScript', 'SQL Databases'].map((skill) => (
-              <motion.div 
-                key={skill} 
-                className="bg-zinc-800 p-6 rounded-2xl text-center hover:bg-zinc-700 transition group"
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="text-3xl mb-3">🚀</div>
-                <div className="font-medium">{skill}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+  {[
+    { name: 'C# & .NET', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+    { name: 'Kotlin & Android', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
+    { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'ASP.NET MVC', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
+    { name: 'Microsoft Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
+    { name: 'Git & GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'SQL Databases', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+  ].map((skill) => (
+    <motion.div 
+      key={skill.name} 
+      className="bg-zinc-800 p-6 rounded-2xl text-center hover:bg-zinc-700 transition group flex flex-col items-center"
+      whileHover={{ scale: 1.05 }}
+    >
+      <img 
+        src={skill.icon} 
+        alt={skill.name} 
+        className="w-12 h-12 mb-4 grayscale group-hover:grayscale-0 transition" 
+      />
+      <div className="font-medium">{skill.name}</div>
+    </motion.div>
+  ))}
+</div>
       </motion.section>
 
       {/* Projects Section */}
