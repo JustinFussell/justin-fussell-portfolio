@@ -89,6 +89,45 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 text-center">Experience</h2>
+        
+        <div className="space-y-16">
+          {/* Internship */}
+          <div>
+            <div className="flex flex-col md:flex-row md:items-start gap-6">
+              <div className="md:w-48 flex-shrink-0">
+                <div className="text-sm text-zinc-500">Jul 2025 – Present</div>
+                <div className="font-medium">SOUL Technology</div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Software Development Intern</h3>
+                <p className="text-zinc-400 mt-2">
+                  One-on-one mentorship. Gaining practical exposure to ASP.NET MVC, Azure, C#, and real-world development workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Team Leader Project */}
+          <div>
+            <div className="flex flex-col md:flex-row md:items-start gap-6">
+              <div className="md:w-48 flex-shrink-0">
+                <div className="text-sm text-zinc-500">2024</div>
+                <div className="font-medium">Varsity College</div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Team Leader – Website & Mobile App</h3>
+                <p className="text-zinc-400 mt-2">
+                  Led team of four using Agile. Delivered web and mobile application ahead of schedule.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
