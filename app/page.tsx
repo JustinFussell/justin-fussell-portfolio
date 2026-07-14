@@ -1,7 +1,11 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
 export default function Home() {
   return (
     <main className="min-h-screen pt-20">
-      {/* Hero Section - unchanged from before */}
+      {/* Hero Section */}
       <section className="flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-6">
@@ -25,8 +29,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section - unchanged */}
-      <section id="about" className="py-24 px-6 max-w-4xl mx-auto">
+      {/* About Section */}
+      <motion.section 
+        id="about" 
+        className="py-24 px-6 max-w-4xl mx-auto"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
         <h2 className="text-4xl font-bold mb-12 text-center">About Me</h2>
         <div className="prose prose-invert max-w-none text-lg text-zinc-300">
           <p>
@@ -41,15 +52,38 @@ export default function Home() {
             FreeCodeCamp, Microsoft Learn, and personal projects.
           </p>
         </div>
-      </section>
+      </motion.section>
+
+      {/* Skills Section */}
+      <motion.section 
+        className="py-20 px-6 bg-zinc-900"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {['C# & .NET', 'Kotlin & Android', 'React Native', 'ASP.NET MVC', 'Microsoft Azure', 'Git & GitHub', 'JavaScript', 'SQL Databases'].map((skill) => (
+              <motion.div 
+                key={skill} 
+                className="bg-zinc-800 p-6 rounded-2xl text-center hover:bg-zinc-700 transition group"
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="text-3xl mb-3">🚀</div>
+                <div className="font-medium">{skill}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
 
       {/* Projects Section */}
       <section id="projects" className="py-24 bg-zinc-900 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
-          
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Project 1: MoneyQuest */}
             <div className="group bg-zinc-800 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300 border border-white/10">
               <div className="h-48 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
                 <span className="text-4xl">💰</span>
@@ -68,7 +102,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 2: ASP.NET Web App */}
             <div className="group bg-zinc-800 rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300 border border-white/10">
               <div className="h-48 bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center">
                 <span className="text-4xl">🌐</span>
@@ -93,9 +126,7 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">Experience</h2>
-        
         <div className="space-y-16">
-          {/* Internship */}
           <div>
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               <div className="md:w-48 flex-shrink-0">
@@ -111,7 +142,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Team Leader Project */}
           <div>
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               <div className="md:w-48 flex-shrink-0">
@@ -129,7 +159,7 @@ export default function Home() {
         </div>
       </section>
 
-            {/* Contact Section */}
+      {/* Contact Section */}
       <section id="contact" className="py-24 px-6 bg-zinc-900">
         <div className="max-w-md mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
