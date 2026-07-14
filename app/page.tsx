@@ -128,6 +128,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+            {/* Contact Section */}
+      <section id="contact" className="py-24 px-6 bg-zinc-900">
+        <div className="max-w-md mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
+          <p className="text-zinc-400 mb-8">
+            Open to internship opportunities, collaborations, or just a chat about development.
+          </p>
+          <a 
+            href="mailto:justinfussell23@gmail.com" 
+            className="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-zinc-200 transition text-lg"
+          >
+            Email Me
+          </a>
+          <div className="mt-12 text-sm text-zinc-500">
+            Cape Town, South Africa • LinkedIn: linkedin.com/in/justin-fussell
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 text-center text-xs text-zinc-500 border-t border-white/10">
+        © {new Date().getFullYear()} Justin Fussell. Built with Next.js and Tailwind CSS.
+      </footer>
     </main>
   );
 }
