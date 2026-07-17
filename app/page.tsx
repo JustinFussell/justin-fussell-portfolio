@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Projects Section - Coming Soon */}
+      {/* Projects Section */}
       <section id="projects" className="py-24 bg-zinc-900 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12">Featured Projects</h2>
@@ -109,16 +109,21 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">Experience</h2>
-        <div className="space-y-16">
-          <div>
-            <div className="flex flex-col md:flex-row gap-6">
-              <div className="md:w-48 flex-shrink-0">
-                <div className="text-sm text-zinc-500">July 2025 – Present</div>
-                <div className="font-medium">SOUL Technology, Cape Town</div>
+        <div className="space-y-8">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
+            <div className="flex flex-col md:flex-row gap-8">
+              <div className="md:w-56 flex-shrink-0">
+                <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3">July 2025 – Present</div>
+                <div className="font-medium flex items-center gap-4">
+                  <a href="https://www.soultechnology.co.za/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white p-2 shadow-sm transition hover:scale-105">
+                    <img src="/soul-technology.png" alt="SOUL Technology" className="h-10 w-24 shrink-0 object-contain border border-white/20 rounded p-1 bg-white" />
+                  </a>
+                  <span className="leading-snug">SOUL Technology, Cape Town</span>
+                </div>
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-xl font-semibold">Software Development Intern – One-on-One Mentorship</h3>
-                <p className="text-zinc-400 mt-3">
+                <p className="text-zinc-400 mt-3 leading-relaxed">
                   Learning directly from the owner and Software Engineer in a one-on-one mentorship environment. Gaining practical exposure to ASP.NET MVC projects using Visual Studio. Assisting with small development tasks such as UI updates, code changes, and fixing basic issues.
                 </p>
                 <div className="mt-4 text-sm text-zinc-500">Skills: C#, ASP.NET MVC (Beginner), Visual Studio, Git, Azure (Basic Exposure)</div>
@@ -126,15 +131,20 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
-            <div className="flex flex-col md:flex-row gap-6">
-              <div className="md:w-48 flex-shrink-0">
-                <div className="text-sm text-zinc-500">2024</div>
-                <div className="font-medium">Emeris (formerly The IIE’s Varsity College), Cape Town</div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
+            <div className="flex flex-col md:flex-row gap-8">
+              <div className="md:w-56 flex-shrink-0">
+                <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3">2024</div>
+                <div className="font-medium flex items-center gap-4">
+                  <a href="https://www.emeris.ac.za/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white p-2 shadow-sm transition hover:scale-105">
+                    <img src="https://www.emeris.ac.za/img/emeris-logo-teal.svg" alt="Emeris" className="h-10 w-24 shrink-0 object-contain border border-white/20 rounded p-1 bg-white" />
+                  </a>
+                  <span className="leading-snug">Emeris (formerly The IIE’s Varsity College), Cape Town</span>
+                </div>
               </div>
-              <div>
+              <div className="flex-1">
                 <h3 className="text-xl font-semibold">Team Leader – Website & Mobile App University Project</h3>
-                <p className="text-zinc-400 mt-3">
+                <p className="text-zinc-400 mt-3 leading-relaxed">
                   Led a team of four to design and develop a web and mobile application using Agile methodology, ensuring project completion ahead of schedule. Managed tasks, conducted UX research, and delivered technical presentations to superiors. Implemented core modules using HTML, CSS, JavaScript, and Kotlin.
                 </p>
                 <div className="mt-4 text-sm text-zinc-500">Technologies Used: HTML, CSS, JavaScript, Kotlin, GitHub</div>
@@ -167,21 +177,27 @@ export default function Home() {
         <div className="space-y-12">
           <div>
             <h3 className="text-2xl font-semibold flex items-center gap-3">
-              <img src="https://www.emeris.ac.za/img/emeris-logo-teal.svg" alt="Emeris" className="h-8" />
+              <a href="https://www.emeris.ac.za/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white p-2 shadow-sm transition hover:scale-105">
+                <img src="https://www.emeris.ac.za/img/emeris-logo-teal.svg" alt="Emeris" className="h-10 w-24 shrink-0 object-contain border border-white/20 rounded p-1 bg-white" />
+              </a>
               Bachelor of Computer and Information Sciences in Application Development
             </h3>
             <p className="text-zinc-400">Emeris (formerly The IIE’s Varsity College), Cape Town • Expected Completion: November 2026</p>
           </div>
           <div>
             <h3 className="text-2xl font-semibold flex items-center gap-3">
-              <img src="https://www.emeris.ac.za/img/emeris-logo-teal.svg" alt="Emeris" className="h-8" />
+              <a href="https://www.emeris.ac.za/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white p-2 shadow-sm transition hover:scale-105">
+                <img src="https://www.emeris.ac.za/img/emeris-logo-teal.svg" alt="Emeris" className="h-10 w-24 shrink-0 object-contain border border-white/20 rounded p-1 bg-white" />
+              </a>
               Higher Certificate in Mobile Applications and Web Development
             </h3>
             <p className="text-zinc-400">Emeris (formerly The IIE’s Varsity College), Cape Town • Completed: 2023 (Distinction)</p>
           </div>
           <div>
             <h3 className="text-2xl font-semibold flex items-center gap-3">
-              <img src="https://baobabcollege.org/wp-content/uploads/2024/05/logo-removebg-preview.png" alt="Baobab College" className="h-8" />
+              <a href="https://baobabcollege.org/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white p-2 shadow-sm transition hover:scale-105">
+                <img src="/baobab-college.png" alt="Baobab College" className="h-10 w-24 shrink-0 object-contain border border-white/20 rounded p-1 bg-white" />
+              </a>
               Cambridge International High School Certificate
             </h3>
             <p className="text-zinc-400">Baobab College, Lusaka, Zambia • 2019 – 2022</p>
@@ -199,7 +215,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">Professional Membership</h2>
           <div className="bg-white/10 backdrop-blur-md rounded-3xl p-12 border border-white/20">
-            <img src="https://www.iitpsa.org.za/wp-content/uploads/2019/03/IITPSA-LOGO-1-Hi-Res.jpg" alt="IITPSA Logo" className="mx-auto h-20 mb-6" />
+            <a href="https://www.iitpsa.org.za/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white p-3 shadow-sm transition hover:scale-105 mb-6">
+              <img src="https://www.iitpsa.org.za/wp-content/uploads/2019/03/IITPSA-LOGO-1-Hi-Res.jpg" alt="IITPSA Logo" className="h-20 border border-white/20 rounded p-1 bg-white" />
+            </a>
             <h3 className="text-3xl font-semibold mb-4">Student Member</h3>
             <p className="text-2xl text-white/90 mb-2">Institute of Information Technology Professionals South Africa (IITPSA)</p>
             <p className="text-zinc-400">March 2026 – Present</p>
