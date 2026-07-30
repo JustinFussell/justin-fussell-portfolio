@@ -134,18 +134,34 @@ export default function Home() {
       </motion.section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 bg-zinc-900 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-12">Featured Projects</h2>
-          <div className="bg-zinc-800 rounded-3xl p-16 border border-white/10">
-            <div className="text-6xl mb-6">🚧</div>
-            <h3 className="text-3xl font-semibold mb-4">Projects Coming Soon</h3>
-            <p className="text-zinc-400 max-w-md mx-auto">
-              I'm currently working on exciting new projects. Check back soon for live demos, GitHub repositories, and detailed case studies.
-            </p>
-          </div>
-        </div>
-      </section>
+<section id="projects" className="py-24 bg-zinc-900 px-6">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+    <p className="text-zinc-400 mb-12 max-w-xl mx-auto">
+      I’m currently building and refining projects. New work will appear here soon.
+    </p>
+
+    <div className="grid md:grid-cols-2 gap-8">
+      {/* Coming Soon Card 1 */}
+      <div className="group bg-zinc-800 rounded-2xl border border-white/10 p-10 hover:border-white/20 transition">
+        <div className="text-5xl mb-6">🚧</div>
+        <h3 className="text-2xl font-semibold mb-3">Project Coming Soon</h3>
+        <p className="text-zinc-400 text-sm leading-relaxed">
+          A new web or mobile project is in progress. Details, tech stack, and live demo will be added here.
+        </p>
+      </div>
+
+      {/* Coming Soon Card 2 */}
+      <div className="group bg-zinc-800 rounded-2xl border border-white/10 p-10 hover:border-white/20 transition">
+        <div className="text-5xl mb-6">💡</div>
+        <h3 className="text-2xl font-semibold mb-3">More Projects Coming</h3>
+        <p className="text-zinc-400 text-sm leading-relaxed">
+          I’m actively learning and building. Check back soon for case studies and GitHub repositories.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Experience Section */}
       <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
