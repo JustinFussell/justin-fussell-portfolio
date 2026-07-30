@@ -6,28 +6,62 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-6">
-            Justin Fussell
-          </h1>
-          <p className="text-2xl md:text-3xl text-zinc-400 mb-8">
-            Student Developer &amp; Aspiring Software Engineer
-          </p>
-          <p className="text-lg text-zinc-400 max-w-md mx-auto mb-12">
-            Building practical web and mobile solutions. Passionate about solving real problems 
-            through clean code and continuous learning.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#projects" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition">
-              View My Projects
-            </a>
-            <a href="#contact" className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
-              Get In Touch
-            </a>
-          </div>
-        </div>
-      </section>
+<section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
+  <div className="max-w-3xl mx-auto">
+    <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-6">
+      Justin Fussell
+    </h1>
+    <p className="text-2xl md:text-3xl text-zinc-400 mb-8">
+      Student Developer &amp; Aspiring Software Engineer
+    </p>
+    <p className="text-lg text-zinc-400 max-w-md mx-auto mb-12">
+      Building practical web and mobile solutions. Passionate about solving real problems 
+      through clean code and continuous learning.
+    </p>
+    
+    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+      <a href="#projects" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition">
+        View My Projects
+      </a>
+      <a href="#contact" className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
+        Get In Touch
+      </a>
+    </div>
+
+    {/* Social Icons */}
+    <div className="flex justify-center gap-6">
+      <a 
+        href="https://linkedin.com/in/justin-fussell" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-zinc-400 hover:text-white transition"
+        aria-label="LinkedIn"
+      >
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-7 h-7" />
+      </a>
+      <a 
+        href="https://github.com/JustinFussell" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-zinc-400 hover:text-white transition"
+        aria-label="GitHub"
+      >
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" className="w-7 h-7" />
+      </a>
+    </div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <a 
+    href="#about" 
+    className="absolute bottom-10 left-1/2 -translate-x-1/2 text-zinc-500 hover:text-white transition animate-bounce"
+    aria-label="Scroll down"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </a>
+</section>
 
       {/* About Section */}
       <motion.section 
