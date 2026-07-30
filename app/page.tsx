@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
   return (
@@ -8,12 +9,33 @@ export default function Home() {
       {/* Hero Section */}
 <section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
   <div className="max-w-3xl mx-auto">
-    <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-6">
-      Justin Fussell
-    </h1>
-    <p className="text-2xl md:text-3xl text-zinc-400 mb-8">
-      Student Developer &amp; Aspiring Software Engineer
-    </p>
+    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+  <TypeAnimation
+    sequence={[
+      'Justin Fussell',
+      2000,
+    ]}
+    wrapper="span"
+    speed={40}
+    repeat={0}
+  />
+</h1>
+
+<p className="text-2xl md:text-3xl text-zinc-400 mb-8 min-h-[40px]">
+  <TypeAnimation
+    sequence={[
+      'Student Developer & Aspiring Software Engineer',
+      2000,
+      'Building practical web & mobile solutions',
+      2000,
+      'Passionate about clean code & continuous learning',
+      2000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+  />
+</p>
     <p className="text-lg text-zinc-400 max-w-md mx-auto mb-12">
       Building practical web and mobile solutions. Passionate about solving real problems 
       through clean code and continuous learning.
