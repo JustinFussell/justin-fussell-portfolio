@@ -20,13 +20,20 @@ export default function Home() {
     </p>
     
     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-      <a href="#projects" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition">
-        View My Projects
-      </a>
-      <a href="#contact" className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
-        Get In Touch
-      </a>
-    </div>
+  <a href="#projects" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition">
+    View My Projects
+  </a>
+  <a href="#contact" className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
+    Get In Touch
+  </a>
+  <a 
+    href="/Justin-Fussell-CV.pdf" 
+    download
+    className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition"
+  >
+    Download CV
+  </a>
+</div>
 
     {/* Social Icons */}
     <div className="flex justify-center gap-6">
@@ -261,17 +268,42 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 px-6 bg-zinc-900">
-        <div className="max-w-md mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
-          <a href="https://linkedin.com/in/justin-fussell" target="_blank" className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition mb-8">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-8 h-8" />
-            Connect on LinkedIn
-          </a>
-          <p className="text-zinc-400">Or email me directly</p>
-          <a href="mailto:justinfussell23@gmail.com" className="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-zinc-200 transition text-lg mt-4">justinfussell23@gmail.com</a>
-        </div>
-      </section>
+<section id="contact" className="py-24 px-6 bg-zinc-900">
+  <div className="max-w-md mx-auto text-center">
+    <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
+    <p className="text-zinc-400 mb-8">
+      Open to internship opportunities, collaborations, or just a chat about development.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+      <a 
+        href="https://linkedin.com/in/justin-fussell" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition"
+      >
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-6 h-6" />
+        Connect on LinkedIn
+      </a>
+
+      <a 
+        href="/Justin-Fussell-CV.pdf" 
+        download
+        className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition"
+      >
+        Download CV
+      </a>
+    </div>
+
+    <p className="text-zinc-400 mb-4">Or email me directly</p>
+    <a 
+      href="mailto:justinfussell23@gmail.com" 
+      className="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-zinc-200 transition text-lg"
+    >
+      justinfussell23@gmail.com
+    </a>
+  </div>
+</section>
 
       <footer className="py-8 text-center text-xs text-zinc-500 border-t border-white/10">
         © {new Date().getFullYear()} Justin Fussell. Built with Next.js and Tailwind CSS.
