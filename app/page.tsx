@@ -7,90 +7,94 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-<section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center hero-gradient overflow-hidden">
-  <div className="max-w-3xl mx-auto">
-    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-  <TypeAnimation
-    sequence={[
-      'Justin Fussell',
-      2000,
-    ]}
-    wrapper="span"
-    speed={40}
-    repeat={0}
-  />
-</h1>
+      <section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center hero-gradient overflow-hidden">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+            <TypeAnimation
+              sequence={['Justin Fussell', 2000]}
+              wrapper="span"
+              speed={40}
+              repeat={0}
+            />
+          </h1>
 
-<p className="text-2xl md:text-3xl text-zinc-400 mb-8 min-h-[40px]">
-  <TypeAnimation
-    sequence={[
-      'Student Developer & Aspiring Software Engineer',
-      2000,
-      'Building practical web & mobile solutions',
-      2000,
-      'Passionate about clean code & continuous learning',
-      2000,
-    ]}
-    wrapper="span"
-    speed={50}
-    repeat={Infinity}
-  />
-</p>
-    <p className="text-lg text-zinc-400 max-w-md mx-auto mb-12">
-      Building practical web and mobile solutions. Passionate about solving real problems 
-      through clean code and continuous learning.
-    </p>
-    
-    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-  <a href="#projects" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition">
-    View My Projects
-  </a>
-  <a href="#contact" className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
-    Get In Touch
-  </a>
-  <a 
-    href="/Justin-Fussell-CV.pdf" 
-    download
-    className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition"
-  >
-    Download CV
-  </a>
-</div>
+          <p className="text-2xl md:text-3xl text-zinc-400 mb-8 min-h-[40px]">
+            <TypeAnimation
+              sequence={[
+                'Student Developer & Aspiring Software Engineer',
+                2000,
+                'Building practical web & mobile solutions',
+                2000,
+                'Passionate about clean code & continuous learning',
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </p>
 
-    {/* Social Icons */}
-    <div className="flex justify-center gap-6">
-      <a 
-        href="https://linkedin.com/in/justin-fussell" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="text-zinc-400 hover:text-white transition"
-        aria-label="LinkedIn"
-      >
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-7 h-7" />
-      </a>
-      <a 
-        href="https://github.com/JustinFussell" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="text-zinc-400 hover:text-white transition"
-        aria-label="GitHub"
-      >
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" className="w-7 h-7" />
-      </a>
-    </div>
-  </div>
+          <p className="text-lg text-zinc-400 max-w-md mx-auto mb-12">
+            Building practical web and mobile solutions. Passionate about solving real problems 
+            through clean code and continuous learning.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <a 
+              href="#projects" 
+              className="btn-primary bg-white text-black px-8 py-4 rounded-full font-medium"
+            >
+              View My Projects
+            </a>
+            <a 
+              href="#contact" 
+              className="btn-secondary border border-white/30 px-8 py-4 rounded-full font-medium"
+            >
+              Get In Touch
+            </a>
+            <a 
+              href="/Justin-Fussell-CV.pdf" 
+              download
+              className="btn-secondary border border-white/30 px-8 py-4 rounded-full font-medium"
+            >
+              Download CV
+            </a>
+          </div>
 
-  {/* Scroll Indicator */}
-  <a 
-    href="#about" 
-    className="absolute bottom-10 left-1/2 -translate-x-1/2 text-zinc-500 hover:text-white transition animate-bounce"
-    aria-label="Scroll down"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-    </svg>
-  </a>
-</section>
+          {/* Social Icons */}
+          <div className="flex justify-center gap-6">
+            <a 
+              href="https://linkedin.com/in/justin-fussell" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-zinc-400 hover:text-white transition"
+              aria-label="LinkedIn"
+            >
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-7 h-7" />
+            </a>
+            <a 
+              href="https://github.com/JustinFussell" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-zinc-400 hover:text-white transition"
+              aria-label="GitHub"
+            >
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" className="w-7 h-7" />
+            </a>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <a 
+          href="#about" 
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-zinc-500 hover:text-white transition animate-bounce"
+          aria-label="Scroll down"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </section>
 
       {/* About Section */}
       <motion.section 
@@ -156,34 +160,32 @@ export default function Home() {
       </motion.section>
 
       {/* Projects Section */}
-<section id="projects" className="py-24 bg-zinc-900 px-6">
-  <div className="max-w-5xl mx-auto text-center">
-    <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
-    <p className="text-zinc-400 mb-12 max-w-xl mx-auto">
-      I’m currently building and refining projects. New work will appear here soon.
-    </p>
+      <section id="projects" className="py-24 bg-zinc-900 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <p className="text-zinc-400 mb-12 max-w-xl mx-auto">
+            I’m currently building and refining projects. New work will appear here soon.
+          </p>
 
-    <div className="grid md:grid-cols-2 gap-8">
-      {/* Coming Soon Card 1 */}
-      <div className="group bg-zinc-800 rounded-2xl border border-white/10 p-10 hover:border-white/20 transition">
-        <div className="text-5xl mb-6">🚧</div>
-        <h3 className="text-2xl font-semibold mb-3">Project Coming Soon</h3>
-        <p className="text-zinc-400 text-sm leading-relaxed">
-          A new web or mobile project is in progress. Details, tech stack, and live demo will be added here.
-        </p>
-      </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="group bg-zinc-800 rounded-2xl border border-white/10 p-10 hover:border-white/20 transition">
+              <div className="text-5xl mb-6">🚧</div>
+              <h3 className="text-2xl font-semibold mb-3">Project Coming Soon</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                A new web or mobile project is in progress. Details, tech stack, and live demo will be added here.
+              </p>
+            </div>
 
-      {/* Coming Soon Card 2 */}
-      <div className="group bg-zinc-800 rounded-2xl border border-white/10 p-10 hover:border-white/20 transition">
-        <div className="text-5xl mb-6">💡</div>
-        <h3 className="text-2xl font-semibold mb-3">More Projects Coming</h3>
-        <p className="text-zinc-400 text-sm leading-relaxed">
-          I’m actively learning and building. Check back soon for case studies and GitHub repositories.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+            <div className="group bg-zinc-800 rounded-2xl border border-white/10 p-10 hover:border-white/20 transition">
+              <div className="text-5xl mb-6">💡</div>
+              <h3 className="text-2xl font-semibold mb-3">More Projects Coming</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                I’m actively learning and building. Check back soon for case studies and GitHub repositories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Experience Section */}
       <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
@@ -306,42 +308,42 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-<section id="contact" className="py-24 px-6 bg-zinc-900">
-  <div className="max-w-md mx-auto text-center">
-    <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
-    <p className="text-zinc-400 mb-8">
-      Open to internship opportunities, collaborations, or just a chat about development.
-    </p>
+      <section id="contact" className="py-24 px-6 bg-zinc-900">
+        <div className="max-w-md mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
+          <p className="text-zinc-400 mb-8">
+            Open to internship opportunities, collaborations, or just a chat about development.
+          </p>
 
-    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-      <a 
-        href="https://linkedin.com/in/justin-fussell" 
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-zinc-200 transition"
-      >
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-6 h-6" />
-        Connect on LinkedIn
-      </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a 
+              href="https://linkedin.com/in/justin-fussell" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium"
+            >
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="w-6 h-6" />
+              Connect on LinkedIn
+            </a>
 
-      <a 
-        href="/Justin-Fussell-CV.pdf" 
-        download
-        className="border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition"
-      >
-        Download CV
-      </a>
-    </div>
+            <a 
+              href="/Justin-Fussell-CV.pdf" 
+              download
+              className="btn-secondary border border-white/30 px-8 py-4 rounded-full font-medium"
+            >
+              Download CV
+            </a>
+          </div>
 
-    <p className="text-zinc-400 mb-4">Or email me directly</p>
-    <a 
-      href="mailto:justinfussell23@gmail.com" 
-      className="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-zinc-200 transition text-lg"
-    >
-      justinfussell23@gmail.com
-    </a>
-  </div>
-</section>
+          <p className="text-zinc-400 mb-4">Or email me directly</p>
+          <a 
+            href="mailto:justinfussell23@gmail.com" 
+            className="inline-block bg-white text-black px-10 py-4 rounded-full font-medium hover:bg-zinc-200 transition text-lg"
+          >
+            justinfussell23@gmail.com
+          </a>
+        </div>
+      </section>
 
       <footer className="py-8 text-center text-xs text-zinc-500 border-t border-white/10">
         © {new Date().getFullYear()} Justin Fussell. Built with Next.js and Tailwind CSS.
