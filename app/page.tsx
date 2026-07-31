@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
-<section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center">
+<section className="relative flex min-h-[90vh] flex-col items-center justify-center px-6 text-center hero-gradient overflow-hidden">
   <div className="max-w-3xl mx-auto">
     <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
   <TypeAnimation
