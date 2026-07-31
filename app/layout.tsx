@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import ThemeToggle from './components/ThemeToggle';
 import ScrollProgress from './components/ScrollProgress';
+import MobileNav from './components/MobileNav';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -46,8 +47,9 @@ export default function RootLayout({
           <div className="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
             <div className="text-xl font-semibold">Justin Fussell</div>
             
-            <div className="flex items-center gap-8">
-              <div className="flex gap-8 text-sm uppercase tracking-widest">
+            <div className="flex items-center gap-6">
+              {/* Desktop Menu */}
+              <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest">
                 <a href="#about" className="hover:opacity-70 transition">About</a>
                 <a href="#projects" className="hover:opacity-70 transition">Projects</a>
                 <a href="#experience" className="hover:opacity-70 transition">Experience</a>
@@ -55,6 +57,7 @@ export default function RootLayout({
               </div>
               
               <ThemeToggle />
+              <MobileNav />
             </div>
           </div>
         </nav>
