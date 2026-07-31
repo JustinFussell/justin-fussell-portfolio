@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import ThemeToggle from './components/ThemeToggle';
+import ScrollProgress from './components/ScrollProgress';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300`}>
+  <ScrollProgress />
+  
   {/* Navigation */}
   <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/80 backdrop-blur-md border-b border-black/10 dark:border-white/10">
     <div className="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
